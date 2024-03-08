@@ -1,0 +1,145 @@
+@font-face {
+  font-family: Poppins;
+  src: url(../Poppins-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+p {
+  line-height: 1.4;
+  letter-spacing: .7px;
+}
+
+:root {
+  --paragraph: 1.7rem;
+  --header-2: 3.2rem;
+  --header-3: 2rem;
+  --container-width: 85%;
+  --main-padding: 50px 0;
+  --a-tag: 2rem;
+  --small-a-tag: 1.6rem;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #fcfcfc;
+}
+
+.newsletter {
+  background-color: rgb(14, 14, 14);
+  padding: 60px 0;
+  border-bottom: 3px solid #d8d8d8;
+}
+
+.newsletter-width {
+  width: var(--container-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter-width img {
+  width: 80px;
+}
+
+.newsletter-width h2 {
+  font-size: var(--header-2);
+  margin: 15px 0;
+  color: #fff;
+}
+
+.newsletter-width form {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+
+}
+
+.newsletter-width form input {
+  background-color: #fff;
+  padding: 20px;
+  outline: 0px;
+  border: 2px solid black;
+  width: 100%;
+  font-size: var(--a-tag);
+  border-radius: 15px;
+}
+
+.newsletter-width form button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 20px;
+  outline: 0;
+  border: 2px solid #000000;
+  background-color: #fb8743;
+  width: 20%;
+  font-size: var(--a-tag);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/********NEWSLETTER END*********/
+/********NEWSLETTER END*********/
+/********NEWSLETTER END*********/
+footer {
+  background-color: #000000;
+  padding: 60px 0;
+}
+
+.footer-width {
+  width: var(--container-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons a:not(:last-child) {
+  margin-right: 30px;
+}
+
+.icons a:hover img {
+  transform: scale(1.1);
+}
+
+.icons img {
+  transition: all .3s ease-in-out;
+  background-color: #ffffff;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.footer-width ul {
+  margin-top: 30px;
+  display: flex;
+}
+
+.footer-width ul li {
+  list-style: none;
+}
+
+.footer-width ul li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer-width ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: var(--small-a-tag);
+  transition: all .3s ease-in-out;
+}
+
+.footer-width ul li a:hover {
+  opacity: .5;
+}
