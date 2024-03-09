@@ -1,0 +1,121 @@
+@font-face {
+  font-family: Chicago;
+  src: url(../Chicago.otf);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(../Poppins-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+p {
+  line-height: 1.4;
+  letter-spacing: .7px;
+}
+
+:root {
+  --paragraph: 1.5rem;
+  --small-paragraph: 1.2rem;
+  --header-2: 3.9rem;
+  --header-3: 2rem;
+  --container-width: 85%;
+  --main-padding: 50px 0;
+  --a-tag: 2rem;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #fcfcfc;
+}
+
+.trending {
+  padding: 60px 0;
+}
+
+.trending-width {
+  width: var(--container-width);
+  margin: 0 auto;
+}
+
+.trending-width h2 {
+  font-size: var(--header-2);
+  text-align: center;
+}
+
+.trendingline {
+  width: 80px;
+  margin: 15px auto 0;
+  height: 7px;
+  border-radius: 5px;
+  background-color: #fb8743;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trending-posts-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.tp p {
+  font-size: var(--small-paragraph);
+}
+
+.tp p:nth-of-type(2) {
+  font-size: var(--paragraph);
+}
+
+.tp p:not(:last-child) {
+  margin-bottom: 7px;
+}
+
+.tp p:nth-of-type(1) {
+  margin-top: 7px;
+}
+
+.tp a {
+  font-size: var(--a-tag);
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.tp {
+  transition: all .3s ease-in-out;
+}
+
+.tp:hover {
+  transform: translateY(3px);
+}
+
+.tp a:hover {
+  text-decoration: underline;
+  transition: all .3s ease-in-out;
+}
+
+.tp img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  object-position: top, center;
+}
+
+.tp b {
+  font-size: var(--small-paragraph);
+}
+
+div {
+  font-size: 0px;
+}
