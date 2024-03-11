@@ -1,4 +1,9 @@
 @font-face {
+  font-family: Chicago;
+  src: url(../Chicago.otf);
+}
+
+@font-face {
   font-family: Poppins;
   src: url(../Poppins-Regular.ttf);
 }
@@ -11,15 +16,17 @@
 }
 
 p {
-  line-height: 1.4;
+  line-height: 1.5;
   letter-spacing: .7px;
 }
 
 :root {
   --paragraph: 1.7rem;
+  --small-paragraph: 1.2rem;
+  --body-text: 1.9rem;
   --header-2: 3.2rem;
-  --header-3: 2rem;
-  --container-width: 85%;
+  --header-3: 1.5rem;
+  --container-width: 80%;
   --main-padding: 50px 0;
   --a-tag: 2rem;
   --small-a-tag: 1.6rem;
@@ -28,6 +35,38 @@ p {
 body {
   font-family: Poppins, sans-serif;
   background-color: #fcfcfc;
+}
+
+input,
+textarea {
+  font-family: Poppins, sans-serif;
+}
+
+h1 {
+  font-family: Chicago, sans-serif;
+}
+
+.banner {
+  background: linear-gradient(to right, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('../IMAGES/white-cabbage-1393859_1280.jpg');
+  min-height: 280px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-position: center;
+}
+
+.banner-width {
+  width: var(--container-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 280px;
+}
+
+.banner-width h1 {
+  font-size: 7.5rem;
+  color: #fff;
 }
 
 .newsletter {
@@ -84,6 +123,7 @@ body {
   font-size: var(--a-tag);
   border-radius: 15px;
   cursor: pointer;
+  font-family: Poppins, sans-serif;
 }
 
 /********NEWSLETTER END*********/

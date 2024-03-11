@@ -1,0 +1,99 @@
+.contact {
+  padding: 60px 0;
+}
+
+.contact-width {
+  width: var(--container-width);
+  margin: 0 auto;
+}
+
+.contact-width h2 {
+  font-size: var(--header-2);
+  text-align: center;
+}
+
+.contact-width p {
+  font-size: var(--paragraph);
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-width a {
+  text-decoration: none;
+  font-size: var(--paragraph);
+  color: #000000;
+  font-weight: 600;
+  transition: .3s ease-in-out;
+}
+
+.contact-width a:hover {
+  opacity: .5;
+}
+
+.contactline {
+  width: 80px;
+  margin: 15px auto 20px;
+  height: 7px;
+  border-radius: 5px;
+  background-color: #fb8743;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.contact-left {
+  width: 57%;
+}
+
+.contact-right {
+  width: 40%;
+}
+
+.contact-left img {
+  width: 100%;
+  filter: saturate(0);
+  object-fit: cover;
+  height: 480px;
+  border-radius: 8px;
+}
+
+div {
+  font-size: 0;
+}
+
+.contact-right input,
+.contact-right textarea {
+  display: block;
+  width: 100%;
+  outline: 0;
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: var(--paragraph);
+  margin-bottom: 17px;
+  font-family: Poppins, sans-serif;
+}
+
+.contact-right button {
+  display: block;
+  width: 210px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 16px 0;
+  border-radius: 8px;
+  background-color: black;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: var(--a-tag);
+  font-family: Poppins, sans-serif;
+  cursor: pointer;
+}
